@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcebba8-a7fe-4740-b2c0-55c1d41cd8ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/redos/entity/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/redos/mapper/RoleMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/redos/mapper/roleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/redos/util/SqlSessionFactoryUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mybatis.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learning.iml" afterPath="$PROJECT_DIR$/learning.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/redos/App.java" afterPath="$PROJECT_DIR$/src/main/java/io/redos/App.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,6 +13,17 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -43,13 +37,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/redos/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+              <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mybatis.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mybatis.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <folding>
+                <marker date="1526550446627" expanded="true" signature="0:287" ph="/* Navicat M... " />
+                <marker date="1526550446627" expanded="true" signature="408:435" ph="DROP TABLE I... " />
+                <marker date="1526550446627" expanded="true" signature="437:622" ph="CREATE TABLE... role" />
+                <marker date="1526550446627" expanded="true" signature="708:755" ph="INSERT INTO `role`... " />
+                <marker date="1526550446627" expanded="true" signature="757:804" ph="INSERT INTO `role`... " />
+                <marker date="1526550446627" expanded="true" signature="904:936" ph="DROP TABLE I... " />
+                <marker date="1526550446627" expanded="true" signature="938:1128" ph="CREATE TABLE... role_copy" />
+                <marker date="1526550446627" expanded="true" signature="1219:1271" ph="INSERT INTO `role_copy`... " />
+                <marker date="1526550446627" expanded="true" signature="1273:1325" ph="INSERT INTO `role_copy`... " />
               </folding>
             </state>
           </provider>
@@ -59,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -95,18 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlSessionFactoryUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/redos/util/SqlSessionFactoryUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/target/classes/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding>
                 <marker date="1526549874963" expanded="true" signature="248:329" ph="..." />
                 <marker date="1526549874963" expanded="true" signature="370:825" ph="..." />
@@ -180,6 +182,7 @@
         <option value="$PROJECT_DIR$/src/main/java/io/redos/App.java" />
         <option value="$PROJECT_DIR$/src/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/backup.sql" />
       </list>
     </option>
   </component>
@@ -262,12 +265,6 @@
             <path>
               <item name="learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,9 +299,9 @@
       <recent name="D:\uapws\IdeaProjects\learning\target" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\uapws\IdeaProjects\learning\src" />
       <recent name="D:\uapws\IdeaProjects\learning" />
       <recent name="D:\uapws\IdeaProjects\learning\src\main\java\io\redos" />
-      <recent name="D:\uapws\IdeaProjects\learning\src" />
       <recent name="D:\uapws\IdeaProjects\learning\src\main" />
       <recent name="D:\uapws\IdeaProjects\learning\src\main\java" />
     </key>
@@ -522,8 +519,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526521134165</updated>
-      <workItem from="1526521143378" duration="11996000" />
+      <workItem from="1526521143378" duration="12117000" />
     </task>
+    <task id="LOCAL-00001" summary="mybatis学习第一天">
+      <created>1526550359784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526550359784</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -559,7 +564,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11996000" />
+    <option name="totallyTimeSpent" value="12117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -808,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/target/classes/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding>
             <marker date="1526549874963" expanded="true" signature="248:329" ph="..." />
             <marker date="1526549874963" expanded="true" signature="370:825" ph="..." />
@@ -830,7 +835,7 @@
     <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -854,9 +859,35 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/io/redos/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mybatis.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding>
+            <marker date="1526550446627" expanded="true" signature="0:287" ph="/* Navicat M... " />
+            <marker date="1526550446627" expanded="true" signature="408:435" ph="DROP TABLE I... " />
+            <marker date="1526550446627" expanded="true" signature="437:622" ph="CREATE TABLE... role" />
+            <marker date="1526550446627" expanded="true" signature="708:755" ph="INSERT INTO `role`... " />
+            <marker date="1526550446627" expanded="true" signature="757:804" ph="INSERT INTO `role`... " />
+            <marker date="1526550446627" expanded="true" signature="904:936" ph="DROP TABLE I... " />
+            <marker date="1526550446627" expanded="true" signature="938:1128" ph="CREATE TABLE... role_copy" />
+            <marker date="1526550446627" expanded="true" signature="1219:1271" ph="INSERT INTO `role_copy`... " />
+            <marker date="1526550446627" expanded="true" signature="1273:1325" ph="INSERT INTO `role_copy`... " />
           </folding>
         </state>
       </provider>
