@@ -2,6 +2,7 @@ package io.redos.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.ibatis.type.Alias;
 
 /**
  * All rights Reserved, Powered By JIE
@@ -13,17 +14,20 @@ import lombok.Setter;
  */
 @Setter
 @Getter
+//@Alias("role")
 public class Role {
     private long id;
-    private String role_name;
+    private String roleName;
     private String notes;
+    private Sex sex;
 
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Role{");
         sb.append("id=").append(id);
-        sb.append(", roleName='").append(role_name).append('\'');
+        sb.append(", roleName='").append(roleName).append('\'');
         sb.append(", notes='").append(notes).append('\'');
+        sb.append(", sex='").append(sex).append('\'');
         sb.append('}');
         return sb.toString();
     }

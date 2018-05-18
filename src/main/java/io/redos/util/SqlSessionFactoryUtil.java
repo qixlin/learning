@@ -20,21 +20,25 @@ import java.io.InputStream;
  * @copyright ©2018
  */
 public class SqlSessionFactoryUtil {
-    static Logger log = LoggerFactory.getLogger(SqlSessionFactoryUtil.class);
-    private SqlSessionFactoryUtil(){}
-    private static final Class CLASS_LOCK = SqlSessionFactoryUtil.class;
-    private static SqlSessionFactory sqlSessionFactory;
-    public static SqlSessionFactory getSqlSessionFactory() {
 
+    static Logger log = LoggerFactory.getLogger(SqlSessionFactoryUtil.class);
+
+    private static final Class CLASS_LOCK = SqlSessionFactoryUtil.class;
+
+    private static SqlSessionFactory sqlSessionFactory;
+
+    private SqlSessionFactoryUtil(){}
+
+    public static SqlSessionFactory getSqlSessionFactory() {
+        String configFile = "mybatis-config.xml";
+        InputStream in = null;
+        try {
+            in = Resources.getResourceAsStream(configFile);
+        } catch (IOException e) {
+            log.info("初始化sqlSessionFactory失败",e);
+        }
         synchronized (CLASS_LOCK) {
             if (sqlSessionFactory == null) {
-                String configFile = "mybatis-config.xml";
-                InputStream in = null;
-                try {
-                    in = Resources.getResourceAsStream(configFile);
-                } catch (IOException e) {
-                    log.info("初始化sqlSessionFactory失败",e);
-                }
                 sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
             }
         }

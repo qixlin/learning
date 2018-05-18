@@ -1,6 +1,7 @@
 package io.redos;
 
 import io.redos.entity.Role;
+import io.redos.entity.Sex;
 import io.redos.mapper.RoleMapper;
 import io.redos.util.SqlSessionFactoryUtil;
 import org.apache.ibatis.io.Resources;
@@ -56,7 +57,7 @@ public class App
         Role role = new Role();
         long key = 3L;
         role.setId(key);
-        role.setRole_name("普通用户");
+        role.setRoleName("普通用户");
         role.setNotes("仅供测试");
         log.info(roleMapper.insertRole(role) + "");
         log.info(roleMapper.getRole(key).toString());
@@ -72,6 +73,25 @@ public class App
         RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
         roleMapper.deleteRole(2L);
         roleMapper.deleteRole(3L);
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void test4(){
+
+        SqlSession sqlSession = SqlSessionFactoryUtil.openSqlSession();
+        RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+        Role role = new Role();
+        long key = 9L;
+        role.setId(key);
+        role.setRoleName("普通用户");
+        role.setNotes("仅供测试");
+        role.setSex(Sex.MALE);
+        log.info(roleMapper.insertRole(role) + "");
+        log.info(roleMapper.getRole(key).toString());
+        log.info(roleMapper.getRoleName(key));
+//        log.info(roleMapper.deleteRole(key) + "");
         sqlSession.commit();
         sqlSession.close();
     }
