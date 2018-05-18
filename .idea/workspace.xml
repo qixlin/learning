@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcebba8-a7fe-4740-b2c0-55c1d41cd8ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/redos/entity/Sex.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/redos/App.java" afterPath="$PROJECT_DIR$/src/main/java/io/redos/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/redos/entity/Role.java" afterPath="$PROJECT_DIR$/src/main/java/io/redos/entity/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/redos/mapper/roleMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/io/redos/mapper/roleMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/redos/util/SqlSessionFactoryUtil.java" afterPath="$PROJECT_DIR$/src/main/java/io/redos/util/SqlSessionFactoryUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mybatis-config.xml" afterPath="$PROJECT_DIR$/src/mybatis-config.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -596,7 +589,7 @@
       <option name="presentableId" value="Default" />
       <updated>1526521134165</updated>
       <workItem from="1526521143378" duration="12145000" />
-      <workItem from="1526617191167" duration="7300000" />
+      <workItem from="1526617191167" duration="7350000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis学习第一天">
       <created>1526550359784</created>
@@ -612,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526550492527</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mybatis学习第一天">
+      <created>1526633329001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526633329001</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -648,7 +648,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19445000" />
+    <option name="totallyTimeSpent" value="19495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
