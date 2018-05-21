@@ -9,7 +9,8 @@
         <id column="id" property="id" javaType="long" jdbcType="BIGINT"/>
         <result column="role_name" property="roleName" />
         <result column="notes" property="notes"/>
-        <result column="sex" property="sex" jdbcType="VARCHAR" javaType="io.redos.entity.Sex" typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
+        <result column="sex" property="sex" jdbcType="VARCHAR" javaType="io.redos.entity.SexEnum"
+                typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
     </resultMap>
     <select id="getRole" parameterType="long" resultMap="roleMap" >
       select id,role_name,notes,sex from role where id= #{id}

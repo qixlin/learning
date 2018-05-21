@@ -19,7 +19,7 @@ public class Role {
     private long id;
     private String roleName;
     private String notes;
-    private Sex sex;
+    private SexEnum sex;
 
     @Override
     public String toString() {

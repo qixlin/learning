@@ -9,7 +9,7 @@
         <!--<package name="io.redos.entity"/>-->
     </typeAliases>
     <typeHandlers>
-        <!--<typeHandler handler="org.apache.ibatis.type.EnumTypeHandler" javaType="io.redos.entity.Sex"/>-->
+        <typeHandler handler="org.apache.ibatis.type.EnumTypeHandler" javaType="io.redos.entity.SexEnum"/>
         <!--<typeHandler handler="io.redos.util.MyStringTypeHandler" jdbcType="VARCHAR" javaType="String"/>-->
     </typeHandlers>
     <environments default="development">
@@ -24,6 +24,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="io/redos/mapper/roleMapper.xml"/>
+        <!--<mapper resource="io/redos/mapper/xml/roleMapper.xml"/>-->
+        <package name="io.redos.mapper" />
     </mappers>
 </configuration>

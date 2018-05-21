@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.redos.mapper.StudentMapper">
+    <resultMap id="studentBean" type="io.redos.entity.StudentBean">
+        <id property="id" column="id"/>
+        <result property="cnname" column="cnname" />
+        <result property="sex" column="sex" typeHandler="io.redos.util.SexTypeHandler" />
+        <result property="note" column="note" />
+        <association property="studentSelfcard" column="id" select="io.redos.mapper.StudentSelfCardMapper.selectCardById" />
+    </resultMap>
+
+    <select id="selectStudentById" parameterType="long" resultMap="studentBean">
+        select id,cnname,sex,note from t_student where id = #{id}
+    </select>
+
+
+</mapper>

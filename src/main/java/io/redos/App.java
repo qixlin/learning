@@ -1,8 +1,10 @@
 package io.redos;
 
 import io.redos.entity.Role;
-import io.redos.entity.Sex;
+import io.redos.entity.SexEnum;
+import io.redos.entity.StudentBean;
 import io.redos.mapper.RoleMapper;
+import io.redos.mapper.StudentMapper;
 import io.redos.util.SqlSessionFactoryUtil;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -43,7 +45,6 @@ public class App
         SqlSession session = sqlSessionFactory.openSession();
         RoleMapper roleMapper = session.getMapper(RoleMapper.class);
         Role role = roleMapper.getRole(2);
-        System.out.println(role);
         log.info(roleMapper.getRoleName(2));
         Role role1 = session.selectOne("io.redos.mapper.RoleMapper.getRole",1L);
         log.info(role1.toString());
@@ -87,7 +88,7 @@ public class App
         role.setId(key);
         role.setRoleName("普通用户");
         role.setNotes("仅供测试");
-        role.setSex(Sex.MALE);
+        role.setSex(SexEnum.MALE);
         log.info(roleMapper.insertRole(role) + "");
         log.info(roleMapper.getRole(key).toString());
         log.info(roleMapper.getRoleName(key));
@@ -96,4 +97,13 @@ public class App
         sqlSession.close();
     }
 
+    @Test
+    public void testStudent(){
+        SqlSession sqlSession = SqlSessionFactoryUtil.getSqlSessionFactory().openSession();
+        StudentMapper studentMapper = sqlSession.getMapper(StudentMapper.class);
+        StudentBean studentBean = studentMapper.selectStudentById(2017053001);
+        log.debug(studentBean.toString());
+        log.info(studentBean.toString());
+        sqlSession.close();
+    }
 }

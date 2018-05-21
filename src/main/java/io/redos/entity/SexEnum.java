@@ -8,10 +8,10 @@ package io.redos.entity;
  * @date 2018/5/18 16:08
  * @copyright ©2018
  */
-public enum Sex {
-    MALE(0,"男"),FAMALE(1,"女");
+public enum SexEnum {
+    MALE(0, "男"), FAMALE(1, "女");
 
-    Sex(int id, String value) {
+    SexEnum(int id, String value) {
         this.id = id;
         this.value = value;
     }
@@ -35,10 +35,10 @@ public enum Sex {
         this.value = value;
     }
 
-    public static Sex getInstance(int i) {
+    public static SexEnum getInstance(int i) {
         if (i == 0) {
             return MALE;
-        } else if (i == 1){
+        } else if (i == 1) {
             return FAMALE;
         }
         return null;
