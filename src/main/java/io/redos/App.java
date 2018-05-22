@@ -102,8 +102,9 @@ public class App
         SqlSession sqlSession = SqlSessionFactoryUtil.getSqlSessionFactory().openSession();
         StudentMapper studentMapper = sqlSession.getMapper(StudentMapper.class);
         StudentBean studentBean = studentMapper.selectStudentById(2017053001);
-        log.debug(studentBean.toString());
-        log.info(studentBean.toString());
+        log.info(studentBean.getStudentLectureList().toString());
+//        log.debug(studentBean.toString());
+//        log.info(studentBean.toString());
         sqlSession.close();
     }
 }

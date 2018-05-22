@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.redos.mapper.LectureMapper">
+    <select id="getLectureById" parameterType="long" resultType="io.redos.entity.LectureBean">
+        select id,lecture_name,note from t_lecture where id=#{id}
+    </select>
+</mapper>

@@ -9,6 +9,7 @@
         <result property="sex" column="sex" typeHandler="io.redos.util.SexTypeHandler" />
         <result property="note" column="note" />
         <association property="studentSelfcard" column="id" select="io.redos.mapper.StudentSelfCardMapper.selectCardById" />
+        <collection property="studentLectureList" column="id" select="io.redos.mapper.StudentLectureMapper.selectStudentLecture"/>
     </resultMap>
 
     <select id="selectStudentById" parameterType="long" resultMap="studentBean">
